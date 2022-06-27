@@ -1,0 +1,16 @@
+#.level = ALL
+#.handler = java.util.logging.ConsoleHandler
+
+
+java.util.logging.ConsoleHandler.level = CONFIG
+java.util.logging.ConsoleHandler.formatter = foo.CustomFormatter
+
+
+foo.level = ALL
+foo.handlers = foo.CustomMemoryHandler
+
+
+#foo.CustomMemoryHandler.formatter = foo.CustomFormatter
+foo.CustomMemoryHandler.target = java.util.logging.ConsoleHandler
+foo.CustomMemoryHandler.push = WARNING
+
