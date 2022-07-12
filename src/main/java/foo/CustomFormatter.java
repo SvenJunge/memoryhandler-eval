@@ -14,6 +14,7 @@ class CustomFormatter
   public String
   format( final LogRecord record )
   {
+    System.out.println( "working" );
     return record.getLevel() + ":\t\t" + record.getMessage() + System.lineSeparator();
   }
 

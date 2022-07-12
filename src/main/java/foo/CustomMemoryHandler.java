@@ -1,6 +1,8 @@
 package foo;
 
 
+import java.util.logging.Handler;
+import java.util.logging.Level;
 import java.util.logging.MemoryHandler;
 
 
@@ -9,14 +11,25 @@ class CustomMemoryHandler
     extends MemoryHandler
 {
 
-  @Override
-  public void
-  close()
-      throws SecurityException
+  public
+  CustomMemoryHandler(
+      final Handler target,
+      final int size,
+      final Level pushlevel )
   {
-    super.push();
-    super.flush();
-    super.close();
+    super( target, size, pushlevel );
   }
+  
+  
+  
+//  @Override
+//  public void
+//  close()
+//      throws SecurityException
+//  {
+//    super.push();
+//    super.flush();
+//    super.close();
+//  }
 
 }
