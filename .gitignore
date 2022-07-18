@@ -1,8 +1,15 @@
+
+
+*/.
+!README.md
+
 # Compiled class file
+.class
 *.class
 
 # Log file
 *.log
+*.logs
 
 # BlueJ files
 *.ctxt
@@ -24,6 +31,7 @@ hs_err_pid*
 
 *.iml
 .idea/
+.eclipse
 
 target/
 build/

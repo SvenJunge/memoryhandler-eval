@@ -43,7 +43,6 @@ class ForkingMemoryHandler
     final Level pushLevel )
   {
     super( target, size, pushLevel );
-    SimpleFormatter
   }
   
   /* TODO: Frage: bei mehreren Handlern eines Loggers -> wird immer der selbe LogRecord eingereicht?

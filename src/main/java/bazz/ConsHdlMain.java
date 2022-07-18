@@ -6,6 +6,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.Flow;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.SimpleFormatter;
 
@@ -18,10 +19,9 @@ class ConsHdlMain
   main( final String[] args )
   {
   
-    Flow
-    
+//    new ReentrantLock().newCondition().
   
-    
+  
   
   }
   
